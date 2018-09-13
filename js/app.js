@@ -116,7 +116,11 @@ console.log(jim);
 // 1. Create an array with the members of the ninja turtles (Donatello, Leonardo, Raphael, Michaelangelo)
 
 const turtles = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo'];
-// const ninja = turtles[0].toUpperCase();
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //2. Use a for loop to call .toUpperCase() on each of them and print out the result.
 for (let i = 0; i <= turtles.length; i++) {
 	if (typeof turtles[i] === 'string') {
@@ -210,13 +214,13 @@ console.log('These are thoms accessories: ' + thomsCloset[2]);
 
 
 //MULTIPLES OF 3 and 5
-
+let total = 0;
 for (let i = 1; i < 1000; i++) {
 if (i % 3 === 0 || i % 5 === 0) {
-		console.log(i);
+		total = total + i;
 }
 }
-
+console.log(total);
 
 
 
