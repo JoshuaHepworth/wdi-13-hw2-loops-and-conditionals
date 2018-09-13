@@ -22,13 +22,14 @@ for(let i = 0; i <= 200; i++) {
 //3. Write code that logs "Love me, pet me! HSSSSSS!" 20 times.
 // let words = ["...human...why you taking pictures of me?...", "...the catnip made me do it...", "...why does the red dot always get away..."];
 // let random = words[Math.floor(2*Math.random())]
-let words = ["...human...why you taking pictures of me?...", "...the catnip made me do it...", "...why does the red dot always get away..."];
+let cat = "Love me, pet me! HSSSSSSS!"
+let words = "...human...why you taking pictures of me?...", "...the catnip made me do it...", "...why does the red dot always get away...";
 var randomValue = words[Math.floor(words.length * Math.random())];
 console.log(randomValue);
 
 for(let i = 0; i < 20; i++) {
 	if (i % 2 === 0){
-		console.log('Love me, pet me! HSSSSSSS!');
+		console.log(cat[i]);
 	}
 // console.log('Love me, pet me! HSSSSSSS!');
 }
@@ -101,6 +102,21 @@ console.log(jim);
 jim.splice(0,0,0)
 console.log(jim);
 
+
+
+//YELL AT NINJA TURTLES
+
+// 1. Create an array with the members of the ninja turtles (Donatello, Leonardo, Raphael, Michaelangelo)
+
+const turtles = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo'];
+// const ninja = turtles[0].toUpperCase();
+//2. Use a for loop to call .toUpperCase() on each of them and print out the result.
+for (let i = 0; i <= turtles.length; i++) {
+	if (typeof turtles[i] === 'string') {
+	turtles[i] = turtles[i].toUpperCase();
+}
+}
+console.log(turtles);
 
 
 
