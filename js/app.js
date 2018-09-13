@@ -181,6 +181,7 @@ const kristyn2 = 'Kristyns first outfit is: ' + kristynsCloset[1] + kristynsClos
 console.log(kristyn2);
 const kristyn3 = 'Kristyns first outfit is: ' + kristynsCloset[3] + kristynsCloset[4] + kristynsCloset[5];
 console.log(kristyn3)
+//Why can't i add spaces...
 const thom1 = 'Thoms first outfit is: ' + thomsCloset[0][1] + thomsCloset[1][1] + [2][2];
 console.log(thom1);
 const thom2 = 'Thoms second outfit is: ' + thomsCloset[0][2] + thomsCloset[1][2] + [2][1];
@@ -189,14 +190,36 @@ const thom3 = 'Thoms second outfit is: ' + thomsCloset[0][3] + thomsCloset[1][0]
 console.log(thom3)
 
 
+//DIRTY LAUNDRY
+
+// a. Time to do laundry - loop through Kristyn's closet and log the sentence "WHIRR: Now washing (item)" for each item in the array.
+for (let i = 0; i <= kristynsCloset.length; i++) {
+	//selecting every time i goes through the loop to log the next item
+	console.log('WHIRR: Now we are washing ' + kristynsCloset[i]) + '.' ;
+}
 
 
 
+//INVENTORY 
+
+//a. Thom wants to do inventory on his closet. Using bracket notation, log the arrays (not the elements in the arrays) containing all of Thom's shirts, pants, and accessories.
+console.log('These are thoms shirts: ' + thomsCloset[0]);
+console.log('These are thoms pants: ' + thomsCloset[1]);
+console.log('These are thoms accessories: ' + thomsCloset[2]);
 
 
 
+//MULTIPLES OF 3 and 5
 
+let total = 0;
 
+for (let i = 1; i < 1000; i++) {
+if (i % 3 === 0 || i % 5 === 0) {
+	total = total + 1;
+	console.log(total);
+}
+}
+console.log(total);
 
 
 
