@@ -20,20 +20,28 @@ for(let i = 0; i <= 200; i++) {
 }
 
 //3. Write code that logs "Love me, pet me! HSSSSSS!" 20 times.
-// let words = ["...human...why you taking pictures of me?...", "...the catnip made me do it...", "...why does the red dot always get away..."];
-// let random = words[Math.floor(2*Math.random())]
-let cat = "Love me, pet me! HSSSSSSS!"
-let words = "...human...why you taking pictures of me?...", "...the catnip made me do it...", "...why does the red dot always get away...";
-var randomValue = words[Math.floor(words.length * Math.random())];
-console.log(randomValue);
-
+//Create variables for cat sounds
+let cat = 'Love me, pet me! HSSSSSS'
+let cat2 = '....human..why you taking pictures of me?..'
+let cat3 = '...the catnip made me do it....'
+let cat4 = '...why does the red dot always get away...'
+//loop from 0-20
 for(let i = 0; i < 20; i++) {
+	console.log(cat);
+	//check if its even
 	if (i % 2 === 0){
-		console.log(cat[i]);
+		//create new variable for randomizing cat response
+		let randomCat = Math.random();
+		//Math.random in console
+		if(randomCat <= 0.33) {
+			console.log(cat2);
+		} else if (randomCat <= 0.66) {
+			console.log(cat3);
+		} else {
+			console.log(cat4)
+		}
 	}
-// console.log('Love me, pet me! HSSSSSSS!');
 }
-
 
 
 
@@ -78,7 +86,6 @@ console.log(shahzad);
 for (let i = 0; i < daniel.length; i++) {
 	console.log(daniel[i] += 1)
 }
-// console.log(daniel[1]+ 1);
 
 //c. Ryan is Batman maybe. Or possibly Robin. Change Ryan's hometown from "Denver" to "Gotham City".
 
@@ -120,15 +127,66 @@ console.log(turtles);
 
 
 
+//RETURN OF THE CLOSETS
+
+const kristynsCloset = [
+  "left shoe",
+  "cowboy boots",
+  "right sock",
+  "GA hoodie",
+  "green pants",
+  "yellow knit hat",
+  "marshmallow peeps"
+];
+
+// Thom's closet is more complicated. Check out this nested data structure!!
+const thomsCloset = [
+  [
+    // These are Thom's shirts
+    "grey button-up",
+    "dark grey button-up",
+    "light blue button-up",
+    "blue button-up",
+  ],[
+    // These are Thom's pants
+    "grey jeans",
+    "jeans",
+    "PJs"
+  ],[
+    // Thom's accessories
+    "wool mittens",
+    "wool scarf",
+    "raybans"
+  ]
+];
+
+//ALIEN ATTIRE
+
+//remove first item of the first array into new varirable
+const kristynsShoe = kristynsCloset.shift();
+//push kristens shoe to last line in array
+thomsCloset.push(kristynsShoe)
+console.log(thomsCloset);
 
 
 
+//DRESS EM UP
+
+// a. Modify your code to put together 3 separate outfits for Kristyn and Thom. Put the output in a sentence to tell us what we'll be wearing. Mix and match!
 
 
-
-
-
-
+const kristyn1 = 'Kristyns first outfit is: ' + kristynsCloset[0]  +  kristynsCloset[1] + kristynsCloset[2];
+console.log(kristyn1);
+const kristyn2 = 'Kristyns first outfit is: ' + kristynsCloset[1] + kristynsCloset[2] + kristynsCloset[3];
+console.log(kristyn2);
+const kristyn3 = 'Kristyns first outfit is: ' + kristynsCloset[3] + kristynsCloset[4] + kristynsCloset[5];
+console.log(kristyn3)
+const thom1 = 'Thoms first outfit is: ' + thomsCloset[0][1] + thomsCloset[1][1] + [2][2];
+console.log(thom1);
+const thom2 = 'Thoms second outfit is: ' + thomsCloset[0][2] + thomsCloset[1][2] + [2][1];
+console.log(thom2)
+const thom3 = 'Thoms second outfit is: ' + thomsCloset[0][3] + thomsCloset[1][0] + [2][0];
+console.log(thom3)
 
 
 
