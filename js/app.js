@@ -211,15 +211,11 @@ console.log('These are thoms accessories: ' + thomsCloset[2]);
 
 //MULTIPLES OF 3 and 5
 
-let total = 0;
-
 for (let i = 1; i < 1000; i++) {
 if (i % 3 === 0 || i % 5 === 0) {
-	total = total + 1;
-	console.log(total);
+		console.log(i);
 }
 }
-console.log(total);
 
 
 
