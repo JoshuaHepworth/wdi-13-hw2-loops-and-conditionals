@@ -120,7 +120,7 @@ const turtles = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo'];
 
 
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 //2. Use a for loop to call .toUpperCase() on each of them and print out the result.
 for (let i = 0; i <= turtles.length; i++) {
 	if (typeof turtles[i] === 'string') {
@@ -207,6 +207,7 @@ for (let i = 0; i <= kristynsCloset.length; i++) {
 //INVENTORY 
 
 //a. Thom wants to do inventory on his closet. Using bracket notation, log the arrays (not the elements in the arrays) containing all of Thom's shirts, pants, and accessories.
+//Is this what the assignment is asking?
 console.log('These are thoms shirts: ' + thomsCloset[0]);
 console.log('These are thoms pants: ' + thomsCloset[1]);
 console.log('These are thoms accessories: ' + thomsCloset[2]);
