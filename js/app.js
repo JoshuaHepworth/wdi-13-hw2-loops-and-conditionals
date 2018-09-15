@@ -84,11 +84,11 @@ shahzad.splice(0,1,"Gameboy");
 
 // b. Daniel just had his birthday; change Daniel's array to reflect him being a year older. Don't just hard code 187--pretend that you don't know that his age is 186, and write your code to just make him a year older than whatever age he was.
 daniel[1] = daniel[1]+1
-console.log(daniel);
+// console.log(daniel);
 //c. Ryan is Batman maybe. Or possibly Robin. Change Ryan's hometown from "Denver" to "Gotham City".
 
-ryan.splice(2,2,"Gotham City");
-// console.log(ryan)
+ryan[2] = 'Gotham City'
+console.log(ryan)
 
 // d. Reuben left Durham 5 years ago to come to Chicago. Remove "Durham" from Reuben's array and add "Chicago". (Note: remove and then add is different from simply changing the value at that index.)
 
