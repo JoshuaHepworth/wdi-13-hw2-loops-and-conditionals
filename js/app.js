@@ -88,7 +88,7 @@ daniel[1] = daniel[1]+1
 //c. Ryan is Batman maybe. Or possibly Robin. Change Ryan's hometown from "Denver" to "Gotham City".
 
 ryan[2] = 'Gotham City'
-console.log(ryan)
+// console.log(ryan)
 
 // d. Reuben left Durham 5 years ago to come to Chicago. Remove "Durham" from Reuben's array and add "Chicago". (Note: remove and then add is different from simply changing the value at that index.)
 
@@ -104,8 +104,8 @@ jim.push('Chicago', 'Denver', 'Smallville');
 
 //f.Bonus: Whoops! Jim is actually only allowed to be in one of two cities. Whatever the first of the 3 cities for Jim is now, remove it from the array using .splice()
 
-jim.splice(0,0,0)
-// console.log(jim);
+jim.splice(2,1)
+console.log(jim);
 
 
 
