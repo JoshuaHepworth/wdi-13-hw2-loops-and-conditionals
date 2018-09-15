@@ -122,10 +122,10 @@ const turtles = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo'];
 //2. Use a for loop to call .toUpperCase() on each of them and print out the result.
 for (let i = 0; i <= turtles.length; i++) {
 	if (typeof turtles[i] === 'string') {
-	turtles[i] = turtles[i].toUpperCase();
+	   turtles[i] = turtles[i].toUpperCase();
+    }
 }
-}
-// console.log(turtles);
+console.log(turtles);
 
 
 
@@ -167,8 +167,8 @@ const thomsCloset = [
 //remove first item of the first array into new varirable
 const kristynsShoe = kristynsCloset.shift();
 //push kristens shoe to last line in array
-thomsCloset.push(kristynsShoe)
-// console.log(thomsCloset);
+thomsCloset[2].push(kristynsShoe)
+console.log(thomsCloset);
 
 
 
