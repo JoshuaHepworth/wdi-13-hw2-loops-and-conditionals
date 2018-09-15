@@ -168,7 +168,7 @@ const thomsCloset = [
 const kristynsShoe = kristynsCloset.shift();
 //push kristens shoe to last line in array
 thomsCloset[2].push(kristynsShoe)
-console.log(thomsCloset);
+// console.log(thomsCloset);
 
 
 
@@ -214,11 +214,11 @@ for (let i = 0; i <= kristynsCloset.length; i++) {
 
 //MULTIPLES OF 3 and 5
 let total = 0;
-for (let i = 1; i < 1000; i++) {
-if (i % 3 === 0 || i % 5 === 0) {
-		total = total + i;
-}
-}
+  for (let i = 1; i < 1000; i++) {
+    if (i % 3 === 0 || i % 5 === 0) {
+		  total = total + i;
+    }
+  }
 // console.log(total);
 
 
