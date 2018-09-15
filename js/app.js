@@ -64,8 +64,8 @@ for(let i = 0; i < 20; i++) {
         result = "buzz";
       } else {
       	//all other numbers be logged
-result = i; }
-    console.log(result);
+        result = i; }
+    // console.log(result);
   }
 
 
@@ -80,34 +80,32 @@ const ryan = ["Ryan", 65, "Denver"];
 //a. Daniel decides that Shahzad can't be named "Shahzad" anymore. Remove "Shahzad" from the shahzad array and replace it with "Gameboy".
 //splice removes first index replaces with new value
 shahzad.splice(0,1,"Gameboy");
-console.log(shahzad);
+// console.log(shahzad);
 
 // b. Daniel just had his birthday; change Daniel's array to reflect him being a year older. Don't just hard code 187--pretend that you don't know that his age is 186, and write your code to just make him a year older than whatever age he was.
-for (let i = 0; i < daniel.length; i++) {
-	console.log(daniel[i] += 1)
-}
-
+daniel[1] = daniel[1]+1
+console.log(daniel);
 //c. Ryan is Batman maybe. Or possibly Robin. Change Ryan's hometown from "Denver" to "Gotham City".
 
 ryan.splice(2,2,"Gotham City");
-console.log(ryan)
+// console.log(ryan)
 
 // d. Reuben left Durham 5 years ago to come to Chicago. Remove "Durham" from Reuben's array and add "Chicago". (Note: remove and then add is different from simply changing the value at that index.)
 
 reuben.pop([3]);
 reuben.push("Chicago");
-console.log(reuben);
+// console.log(reuben);
 
 //e. Jim could be literally anywhere in the world. Remove "All cities" from his array, then pick any 3 cities you like, and add them to Jim's array. If you did it in 3 lines of code that's fine, but see if you can do it in one line of code
 
 jim.pop();
 jim.push('Chicago', 'Denver', 'Smallville');
-console.log(jim);
+// console.log(jim);
 
 //f.Bonus: Whoops! Jim is actually only allowed to be in one of two cities. Whatever the first of the 3 cities for Jim is now, remove it from the array using .splice()
 
 jim.splice(0,0,0)
-console.log(jim);
+// console.log(jim);
 
 
 
@@ -127,7 +125,7 @@ for (let i = 0; i <= turtles.length; i++) {
 	turtles[i] = turtles[i].toUpperCase();
 }
 }
-console.log(turtles);
+// console.log(turtles);
 
 
 
@@ -170,7 +168,7 @@ const thomsCloset = [
 const kristynsShoe = kristynsCloset.shift();
 //push kristens shoe to last line in array
 thomsCloset.push(kristynsShoe)
-console.log(thomsCloset);
+// console.log(thomsCloset);
 
 
 
@@ -179,19 +177,19 @@ console.log(thomsCloset);
 // a. Modify your code to put together 3 separate outfits for Kristyn and Thom. Put the output in a sentence to tell us what we'll be wearing. Mix and match!
 
 
-const kristyn1 = 'Kristyns first outfit is: ' + kristynsCloset[0]  +  kristynsCloset[1] + kristynsCloset[2];
-console.log(kristyn1);
-const kristyn2 = 'Kristyns first outfit is: ' + kristynsCloset[1] + kristynsCloset[2] + kristynsCloset[3];
-console.log(kristyn2);
-const kristyn3 = 'Kristyns first outfit is: ' + kristynsCloset[3] + kristynsCloset[4] + kristynsCloset[5];
-console.log(kristyn3)
-//Why can't i add spaces...
-const thom1 = 'Thoms first outfit is: ' + thomsCloset[0][1] + thomsCloset[1][1] + [2][2];
-console.log(thom1);
-const thom2 = 'Thoms second outfit is: ' + thomsCloset[0][2] + thomsCloset[1][2] + [2][1];
-console.log(thom2)
-const thom3 = 'Thoms second outfit is: ' + thomsCloset[0][3] + thomsCloset[1][0] + [2][0];
-console.log(thom3)
+// const kristyn1 = 'Kristyns first outfit is: ' + kristynsCloset[0]  +  kristynsCloset[1] + kristynsCloset[2];
+// console.log(kristyn1);
+// const kristyn2 = 'Kristyns first outfit is: ' + kristynsCloset[1] + kristynsCloset[2] + kristynsCloset[3];
+// console.log(kristyn2);
+// const kristyn3 = 'Kristyns first outfit is: ' + kristynsCloset[3] + kristynsCloset[4] + kristynsCloset[5];
+// console.log(kristyn3)
+// //Why can't i add spaces...
+// const thom1 = 'Thoms first outfit is: ' + thomsCloset[0][1] + thomsCloset[1][1] + [2][2];
+// console.log(thom1);
+// const thom2 = 'Thoms second outfit is: ' + thomsCloset[0][2] + thomsCloset[1][2] + [2][1];
+// console.log(thom2)
+// const thom3 = 'Thoms second outfit is: ' + thomsCloset[0][3] + thomsCloset[1][0] + [2][0];
+// console.log(thom3)
 
 
 //DIRTY LAUNDRY
@@ -199,7 +197,7 @@ console.log(thom3)
 // a. Time to do laundry - loop through Kristyn's closet and log the sentence "WHIRR: Now washing (item)" for each item in the array.
 for (let i = 0; i <= kristynsCloset.length; i++) {
 	//selecting every time i goes through the loop to log the next item
-	console.log('WHIRR: Now we are washing ' + kristynsCloset[i]) + '.' ;
+	// console.log('WHIRR: Now we are washing ' + kristynsCloset[i]) + '.' ;
 }
 
 
@@ -208,9 +206,9 @@ for (let i = 0; i <= kristynsCloset.length; i++) {
 
 //a. Thom wants to do inventory on his closet. Using bracket notation, log the arrays (not the elements in the arrays) containing all of Thom's shirts, pants, and accessories.
 //Is this what the assignment is asking?
-console.log('These are thoms shirts: ' + thomsCloset[0]);
-console.log('These are thoms pants: ' + thomsCloset[1]);
-console.log('These are thoms accessories: ' + thomsCloset[2]);
+// console.log('These are thoms shirts: ' + thomsCloset[0]);
+// console.log('These are thoms pants: ' + thomsCloset[1]);
+// console.log('These are thoms accessories: ' + thomsCloset[2]);
 
 
 
@@ -221,7 +219,7 @@ if (i % 3 === 0 || i % 5 === 0) {
 		total = total + i;
 }
 }
-console.log(total);
+// console.log(total);
 
 
 
